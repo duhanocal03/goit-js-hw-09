@@ -1,2 +1,2 @@
 import"./assets/styles-DD3qoKza.js";const m="feedback-form-state",t=document.querySelector(".feedback-form");let a={};window.addEventListener("load",()=>{const e=localStorage.getItem(m);e&&(a=JSON.parse(e),t.elements.email.value=a.email||"",t.elements.message.value=a.message||"")});t.addEventListener("input",e=>{a[e.target.name]=e.target.value.trim(),localStorage.setItem(m,JSON.stringify(a))});t.addEventListener("submit",e=>{e.preventDefault();const{email:s,message:l}=t.elements;console.log({email:s.value.trim(),message:l.value.trim()}),localStorage.removeItem(m),t.reset(),a={}});
-//# sourceMappingURL=page-3.js.map
+//# sourceMappingURL=02-form.js.map
