@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.1/dist/simple-lightbox.min.css"
+    />
   </head>
   <body>
-    <load
-      src="./partials/header.html"
-      icon-path="./img/sprite.svg#logo"
-      highlight-act="active"
-    />
-
-    <main>
-      <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 2
-        </h1>
-        <load src="./partials/back-link.html" />
-      </div>
-    </main>
-
-    <load src="./partials/footer.html" />
+    <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.1/dist/simple-lightbox.min.js"></script>
   </body>
+  <load
+    src="./partials/header.html"
+    icon-path="./img/sprite.svg#logo"
+    highlight-act="active"
+  />
+
+  <main>
+    <div class="container">
+      <h1 class="main-title">
+        <span class="main-title-gradient">Welcome</span> to page 2
+      </h1>
+      <load src="./partials/back-link.html" />
+    </div>
+  </main>
+  <ul class="gallery"></ul>
+  <load src="./partials/footer.html" />
+  <script src="../src/js/01-gallery.js"></script>
 </html>
