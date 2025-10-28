@@ -72,6 +72,6 @@ gallery.innerHTML = markup;
 // SimpleLightbox başlatma
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',      // alt text'ten açıklama al
-  captionPosition: 'bottom', // açıklama altta
+  captionPosition: 'bottom', // açıklamayı altta göster
   captionDelay: 250,         // 250ms sonra göster
 });
