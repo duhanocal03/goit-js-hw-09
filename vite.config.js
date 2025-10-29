@@ -5,11 +5,13 @@ import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
+  const isBuild = command === 'build';
   return {
     define: {
-      [command === 'serve' ? 'global' : '_global']: {},
+      global: {},
     },
     root: 'src',
+    base: isBuild ? '/goit-js-hw-09/' : '/',
     build: {
       sourcemap: true,
       rollupOptions: {
